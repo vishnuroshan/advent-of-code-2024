@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "challenge1": "node challenge_1/solution.js"
+  },
+  "name": "adventOfCode2024",
+  "version": "1.0.0",
+  "description": "my solutions to advent of code 2024",
+  "main": "index.js",
+  "author": "Vishnu",
+  "license": "MIT",
+  "private": false
+}
