@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "challenge1": "node challenge_1/solution.js"
+    "challenge_1": "node challenge_1/solution_part_1.js",
+    "challenge_2": "node challenge_1/solution_part_2.js"
   },
   "name": "adventOfCode2024",
   "version": "1.0.0",
