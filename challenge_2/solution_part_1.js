@@ -1,10 +1,4 @@
-const c2 = require("./input");
-
-const challenge2 = () => {
-  let arr = c2.split(/\n/g);
-  arr = arr.map((e) => e.split(",").map((e) => parseInt(e)));
-  return arr;
-};
+const getInput = require("./input");
 
 function checkSafetyForArray(array) {
   let arr = [...array];
@@ -32,7 +26,7 @@ function checkSafetyForArray(array) {
 }
 
 function getSafeReports() {
-  const array = challenge2();
+  const array = getInput();
   const safeReports = [];
   array.forEach((report, index) => {
     const isSafe = checkSafetyForArray(report);
