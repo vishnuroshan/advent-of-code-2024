@@ -1,26 +1,12 @@
-// import { c1 } from "./input";
-const c1 = require("./input");
+const getInput = require("./input");
 
-const challenge1 = () => {
-  const arr = c1.replace(/\n/g, ",").split(",");
-  const left = [];
-  const right = [];
-  for (let i = 0; i < arr.length; i = i + 2) {
-    left.push(parseInt(arr[i]));
-    right.push(parseInt(arr[i + 1]));
-  }
-  return { left, right };
-};
-
-function santaLocationList() {
-  let { left, right } = challenge1();
+function santaLocationDistance() {
+  let { left, right } = getInput();
   let distance = 0;
   const l = left.length;
 
   if (left.length !== right.length) return "arrays are not a pair";
   for (let i = 0; i < l; i++) {
-    console.log(left.length, right.length);
-
     let min = 0;
     const lMin = Math.min(...left);
 
@@ -40,8 +26,7 @@ function santaLocationList() {
       right.splice(rI, 1);
     }
   }
-
   return distance;
 }
 
-console.log(santaLocationList());
+console.log(santaLocationDistance());
