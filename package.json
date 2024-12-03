@@ -2,7 +2,8 @@
   "scripts": {
     "c1_p1": "node challenge_1/solution_part_1.js",
     "c1_p2": "node challenge_1/solution_part_2.js",
-    "c2_p1": "node challenge_2/solution_part_1.js"
+    "c2_p1": "node challenge_2/solution_part_1.js",
+    "c2_p2": "node challenge_2/solution_part_2.js"
   },
   "name": "adventOfCode2024",
   "version": "1.0.0",
