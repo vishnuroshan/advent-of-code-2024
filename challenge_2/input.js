@@ -999,4 +999,10 @@ const c2 = `19,21,24,27,24
 64,66,69,71,72,73,75
 39,37,35,32,29,27,24`;
 
-module.exports = c2;
+const getInput = () => {
+  let arr = c2.split(/\n/g);
+  arr = arr.map((e) => e.split(",").map((e) => parseInt(e)));
+  return arr;
+};
+
+module.exports = getInput;
