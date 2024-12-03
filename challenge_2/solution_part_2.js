@@ -1,10 +1,5 @@
-const c2 = require("./input");
+const getInput = require("./input");
 
-const challenge2 = () => {
-  let arr = c2.split(/\n/g);
-  arr = arr.map((e) => e.split(",").map((e) => parseInt(e)));
-  return arr;
-};
 function checkSafetyForArray(array) {
   let arr = [...array];
   const tArr = [...array];
@@ -25,7 +20,6 @@ function checkSafetyForArray(array) {
           isDone = true;
           isSafe.push(isOk);
         }
-
         // if diff is greater or equal then -3 and less then or equal to 3, its safe
       } else if (diff !== 0 && diff >= -3 && diff <= 3) {
         isSafe.push(true);
@@ -42,11 +36,12 @@ function checkSafetyForArray(array) {
       }
     }
   }
+  //   if (c > 0) console.log("arr:> ", arr, isSafe);
   return isSafe;
 }
 
 function getSafeReports() {
-  const array = challenge2();
+  const array = getInput();
   const safeReports = [];
   array.forEach((report, index) => {
     const isSafe = checkSafetyForArray(report);
