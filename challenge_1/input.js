@@ -999,4 +999,15 @@ const c1 = `87501,76559
 48004,65149
 20103,21592`;
 
-module.exports = c1;
+const getInput = () => {
+  const arr = c1.replace(/\n/g, ",").split(",");
+  const left = [];
+  const right = [];
+  for (let i = 0; i < arr.length; i = i + 2) {
+    left.push(parseInt(arr[i]));
+    right.push(parseInt(arr[i + 1]));
+  }
+  return { left, right };
+};
+
+module.exports = getInput;
