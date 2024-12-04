@@ -5,7 +5,7 @@ function mul(a, b) {
   return a * b;
 }
 function parseMulFunction() {
-  const str = readInput();
+  const str = fs.readFileSync(__dirname + "/input.txt").toString();
   return str.match(pattern);
 }
 

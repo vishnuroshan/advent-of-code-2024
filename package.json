@@ -5,9 +5,10 @@
     "c2_p1": "node challenge_2/solution_part_1.js",
     "c2_p2": "node challenge_2/solution_part_2.js",
     "c3_p1": "node challenge_3/solution_part_1.js",
-    "c3_p2": "node challenge_3/solution_part_2.js"
+    "c3_p2": "node challenge_3/solution_part_2.js",
+    "c4_p1": "node challenge_4/solution_part_1.js"
   },
-  "name": "adventOfCode2024",
+  "name": "advent-of-code-2024",
   "version": "1.0.0",
   "description": "my solutions to advent of code 2024",
   "main": "index.js",
